@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'login.dart';
 import 'on_boarding.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -17,7 +18,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, OnBoarding.id);
+      // Navigator.pushReplacementNamed(context, OnBoarding.id);
+      Navigator.pushReplacementNamed(context, LoginScreen.id);
     });
   }
 
